@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Nunito:wght@200;400;700&display=swap');
+
+:root {
+
+    --teal: rgb(90, 200, 250);
+    --blue: rgb(0, 122, 255);
+    --green: rgb(52, 199, 89);
+    --indigo: rgb(88, 86, 214);
+    --orange: rgb(255, 149, 0);
+    --red: rgb(255, 59, 48);
+    --yellow: rgb(255, 204, 0);
+    --gray: rgb(174, 174, 178);
+    --white: rgb(242, 242, 247);
+    --black: rgb(28, 28, 30);
+    --silver: rgb(229, 229, 234);
+    --dark-gray: rgb(44, 44, 46);
+}
+
+/* Global Styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lora', serif;
+    font-weight: 600;
+}
+
+body {
+    margin: 0px;
+    background-color: var(--white);
+    font-family: 'Nunito', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.relative {
+    position: relative;
+}
+
+/* Grids */
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Margins */
+
+.mg-1 {
+    margin: 1rem;
+}
+
+.mg-2 {
+    margin: 2rem;
+}
+
+.mg-3 {
+    margin: 3rem;
+}
+
+.mg-l-1 {
+    margin-left: 1rem;
+}
+
+.mg-l-sm {
+    margin-left: 0.5rem;
+}
+
+.mg-r-sm {
+    margin-right: 0.5rem;
+}
+
+.mg-r-1 {
+    margin-right: 1rem;
+}
+
+.mg-t-1 {
+    margin-top: 1rem;
+}
+
+.mg-b-1 {
+    margin-bottom: 1rem;
+}
+
+.mg-l-2 {
+    margin-left: 2rem;
+}
+
+.mg-r-2 {
+    margin-right: 2rem;
+}
+
+.mg-t-2 {
+    margin-top: 2rem;
+}
+
+.mg-b-2 {
+    margin-bottom: 2rem;
+}
+
+/* Avatars */
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: var(--white);
+    border-radius: 50%;
+    overflow: hidden;
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid var(--white);
+    box-shadow: 0px 0px 3px var(--teal);
+    transition: 250ms;
+}
+
+.avatar img {
+    max-width: 100%;
+}
+
+.avatar:hover,
+.avatar:focus {
+    box-shadow: 0px 0px 5px 1px var(--teal);
+}
+
+.avatar:active {
+    box-shadow: 0px 0px 7px 2px var(--teal);
+}
+
+
+.avatar-lg {
+    height: 7rem;
+    width: 7rem;
+    font-size: 2rem;
+}
+
+.avatar-md {
+    height: 5rem;
+    width: 5rem;
+    font-size: 1.5rem;
+}
+
+.avatar-badge {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.avatar-parent {
+    position: relative;
+    width: min-content;
+    height: min-content;
+}
+
+/* Badges */
+
+.badge{
+    display: flex;
+    min-width: 0.75rem;
+    min-height: 0.75rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+    margin: 0 0.05rem 0.05rem 0;
+}
+
+.badge-md {
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+    margin: 0 0.1rem 0.1rem 0;
+}
+
+.badge-lg{
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+    margin: 0 0.25rem 0.25rem 0;
+}
+
+/* Colours */
+
+.bg-primary {
+    background-color: var(--teal);
+}
+
+.bg-green {
+    background-color: var(--green);
+}
+
+.bg-red{
+    background-color: var(--red);
+}
+
+.bg-orange{
+    background-color: var(--orange);
+}
