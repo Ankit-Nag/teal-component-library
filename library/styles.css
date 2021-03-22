@@ -2,7 +2,7 @@
 
 :root {
 
-    --teal: rgb(90, 200, 250);
+    --primary: #0099cc;
     --blue: rgb(0, 122, 255);
     --green: rgb(52, 199, 89);
     --indigo: rgb(88, 86, 214);
@@ -35,6 +35,10 @@ body {
     scroll-behavior: smooth;
 }
 
+hr{
+    border-color: var(--black);
+}
+
 .container {
     width: 80%;
     max-width: 800px;
@@ -45,11 +49,13 @@ body {
     position: relative;
 }
 
+
 /* Grids */
 
 .grid-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    
 }
 
 .grid-3 {
@@ -57,7 +63,38 @@ body {
     grid-template-columns: repeat(3, 1fr);
 }
 
+/* Flex */
+
+.flex{
+    display: flex;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex-row-rev{
+    flex-direction: row-reverse;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.flex-col-rev{
+    flex-direction: column-reverse;
+}
+
+.flex-center{
+    align-items: center;
+    justify-content: center;
+}
+
 /* Margins */
+
+.mg-sm{
+    margin: 0.5rem;
+}
 
 .mg-1 {
     margin: 1rem;
@@ -124,7 +161,7 @@ body {
     width: 3rem;
     height: 3rem;
     border: 2px solid var(--white);
-    box-shadow: 0px 0px 3px var(--teal);
+    box-shadow: 0px 0px 3px var(--primary);
     transition: 250ms;
 }
 
@@ -134,11 +171,11 @@ body {
 
 .avatar:hover,
 .avatar:focus {
-    box-shadow: 0px 0px 5px 1px var(--teal);
+    box-shadow: 0px 0px 5px 1px var(--primary);
 }
 
 .avatar:active {
-    box-shadow: 0px 0px 7px 2px var(--teal);
+    box-shadow: 0px 0px 7px 2px var(--primary);
 }
 
 
@@ -191,10 +228,162 @@ body {
     margin: 0 0.25rem 0.25rem 0;
 }
 
-/* Colours */
+/* Text Alignment & styles */
+
+.txt-c{
+    text-align: center;
+}
+
+.txt-l{
+    text-align: left;
+}
+
+.txt-r{
+    text-align: right;
+}
+
+.txt-lg{
+    font-size: 2rem;
+}
+
+.txt-sm{
+    font-size: 0.5rem;
+}
+
+.txt-md{
+    font-size: 1.5rem;
+}
+
+/* Alerts */
+
+.alert{
+    padding: 0.25rem 0.5rem;
+    color: var(--white);
+    border-radius: 0.15rem;
+    font-weight: 700;
+}
+
+.alert-new{
+    background-color: var(--primary);   
+    border: 2px solid var(--primary);
+}
+
+.alert-error{
+    background-color: var(--red);
+    border: 2px solid var(--red);
+}
+
+.alert-success{
+    background-color: var(--green);
+    border: 2px solid var(--green);
+}
+
+.alert-warning{
+    background-color: var(--orange);
+    border: 2px solid var(--orange);
+}
+
+.alert-new-outline{
+    color: var(--primary);   
+    border: 2px solid var(--primary);
+}
+
+.alert-error-outline{
+    color: var(--red);   
+    border: 2px solid var(--red);
+}
+
+.alert-success-outline{
+    color: var(--green);
+    border: 2px solid var(--green);
+}
+
+.alert-warning-outline{
+    color: var(--orange);
+    border: 2px solid var(--orange);
+}
+
+ /* BUTTONS */
+
+ .btn{
+     padding: 0.5rem 0.75rem;
+     border-radius: 0.15rem;
+     border: none;
+     font-size: 0.9rem;
+     font-weight: 600;
+     background-color: var(--black);
+     color: var(--white);
+     border: 2px solid var(--black);
+ }
+
+ .btn:focus{
+     outline: none;
+ }
+
+ .btn-primary{
+     background-color: var(--primary);
+     border: 2px solid var(--primary);
+     color: var(--white);
+ }
+
+ .btn-secondary{
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background-color: transparent;
+ }
+
+ .btn-orange{
+     background-color: var(--orange);
+     color: var(--white);
+     border: 2px solid var(--orange);
+ }
+
+ .btn-orange-outline{
+     background-color: transparent;
+     color: var(--orange);
+     border: 2px solid var(--orange);
+ }
+
+ .btn-green-outline{
+     background-color: transparent;
+     color: var(--green);
+     border: 2px solid var(--green);
+ }
+ .btn-red-outline{
+     background-color: transparent;
+     color: var(--red);
+     border: 2px solid var(--red);
+ }
+
+ .btn-green{
+    background-color: var(--green);
+    color: var(--white);
+    border: 2px solid var(--green);
+ }
+
+ .btn-red{
+    background-color: var(--red);
+    color: var(--white);
+    border: 2px solid var(--red);
+ }
+
+ .btn-outline{
+     background-color: transparent;
+     color: var(--black);
+ }
+
+/* COLOURS */
+
+.primary{
+    color: var(--primary);
+}
+
+.blue{
+    color: var(--blue)
+}
 
 .bg-primary {
-    background-color: var(--teal);
+    background-color: var(--primary);
 }
 
 .bg-green {
@@ -207,4 +396,8 @@ body {
 
 .bg-orange{
     background-color: var(--orange);
+}
+
+.bg-silver{
+    background-color: var(--silver);
 }
